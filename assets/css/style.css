@@ -330,6 +330,39 @@ html[data-theme="dark"] .icon.moon { display: block; }
 }
 .about-actions { display: flex; gap: var(--space-3); }
 
+/* Experience timeline (minimal styles to match your current design) */
+.experience .timeline {
+  display: grid;
+  gap: 1rem;
+}
+.experience .timeline-item {
+  background: var(--card, #fff);
+  border: 1px solid var(--border, #e2e8f0);
+  border-radius: var(--radius, 12px);
+  padding: 1rem 1.25rem;
+  box-shadow: var(--shadow, 0 8px 30px rgba(2,6,23,.08));
+}
+.experience .timeline-meta {
+  margin-bottom: .5rem;
+}
+.experience .timeline-role {
+  margin: 0 0 .25rem 0;
+  font-size: 1.05rem;
+}
+.experience .timeline-org,
+.experience .timeline-date {
+  margin: 0;
+  color: var(--muted, #475569);
+  font-size: .95rem;
+}
+.experience .timeline-points {
+  margin: .5rem 0 0;
+  padding-left: 1.25rem;
+}
+.experience .timeline-points li {
+  margin: .25rem 0;
+}
+
 /* ------------------------------
    Skills
 ------------------------------ */
@@ -523,3 +556,14 @@ input:focus, textarea:focus {
    Utility
 ------------------------------ */
 .hidden { display: none !important; }
+
+@media print {
+  /* Hide nav, footer, and action-only elements in print */
+  header, nav, .site-header, .site-footer, .hero-actions, .contact-form .form-actions, .social-list {
+    display: none !important;
+  }
+  /* Expand content width for print if you use a container max-width */
+  .container { max-width: none !important; }
+  /* Optional: reduce background/gradient usage for cleaner prints */
+  body { background: #ffffff !important; }
+}

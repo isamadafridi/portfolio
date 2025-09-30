@@ -45,8 +45,9 @@
           <ul id="primary-menu" class="nav-links">
             <li><a href="#home" class="nav-link active">Home</a></li>
             <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#skills" class="nav-link">Skills</a></li>
             <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
             <li><a href="#certifications" class="nav-link">Certifications</a></li>
             <li><a href="#contact" class="nav-link">Contact</a></li>
           </ul>
@@ -75,8 +76,11 @@
               I’m Software Engineer And an aspiring AI Engineer skilled in Python, SQL, and machine learning.
               My focus is on deep learning and computer vision, especially using CNNs
             <div class="hero-actions">
-              <a class="btn btn-primary" href="#projects">View Projects</a>
+              <!-- <a class="btn btn-primary" href="#projects">View Projects</a> -->
               <a class="btn btn-ghost" href="#contact">Contact Me</a>
+              <a class="btn btn-ghost" href="assets/cv/cv.pdf" download>Export CV</a>
+              <!-- Alternative: print-based export (opens browser print dialog) -->
+              <!-- <button class="btn btn-ghost" type="button" onclick="window.print()">Export CV</button> -->
             </div>
           </div>
 
@@ -133,6 +137,124 @@
           </article>
         </div>
       </section>
+      <!-- Projects -->
+      <section id="projects" class="section projects reveal" aria-label="Projects">
+        <div class="container">
+          <header class="section-header">
+            <h2>Projects</h2>
+            <p class="section-subtitle">A selection of work showcasing my skills</p>
+          </header>
+
+          <div class="card-grid">
+            <!-- Project Card -->
+            <article class="project-card">
+              <div class="project-media">
+                <img src="assets/images/project-real-estate.jpg" alt="Screenshot of Real Estate project" loading="lazy" />
+              </div>
+              <div class="project-content">
+                <h3>Real Estate</h3>
+                <p>
+                  End‑to‑end data project exploring real estate trends and price patterns, featuring EDA,
+                  visualizations, and predictive modeling.
+                </p>
+                <div class="project-links">
+                  <a class="btn btn-ghost" href="https://github.com/isamadafridi/real_estate" target="_blank" rel="noreferrer noopener">GitHub</a>
+                  <!-- <a class="btn btn-primary" href="#" target="_blank" rel="noreferrer noopener">Live Demo</a> -->
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-media">
+                <img src="assets/images/project-car-price.png" alt="Screenshot of Car Price Prediction project" loading="lazy" />
+              </div>
+              <div class="project-content">
+                <h3>Car Price Prediction</h3>
+                <p>
+                  Machine learning model predicting car prices from features with data cleaning, feature engineering,
+                  and model evaluation workflows.
+                </p>
+                <div class="project-links">
+                  <a class="btn btn-ghost" href="https://github.com/isamadafridi/car_price_predection" target="_blank" rel="noreferrer noopener">GitHub</a>
+                  <a class="btn btn-primary" href="#" target="_blank" rel="noreferrer noopener">Live Demo</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-media">
+                <img src="assets/images/project-netflix.png" alt="Screenshot of Netflix EDA project" loading="lazy" />
+              </div>
+              <div class="project-content">
+                <h3>Netflix Data EDA</h3>
+                <p>
+                  Exploratory data analysis on Netflix titles to uncover content trends, genres, and release patterns.
+                </p>
+                <div class="project-links">
+                  <a class="btn btn-ghost" href="https://github.com/isamadafridi/NetflixDataEDA" target="_blank" rel="noreferrer noopener">GitHub</a>
+                  <a class="btn btn-primary" href="#" target="_blank" rel="noreferrer noopener">Live Demo</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-media">
+                <img src="assets/images/project-eda.jpg" alt="Screenshot of General EDA project" loading="lazy" />
+              </div>
+              <div class="project-content">
+                <h3>General EDA</h3>
+                <p>
+                  A collection of exploratory analyses across datasets, highlighting workflows and visualization skills.
+                </p>
+                <div class="project-links">
+                  <a class="btn btn-ghost" href="https://github.com/isamadafridi/EDA" target="_blank" rel="noreferrer noopener">GitHub</a>
+                  <a class="btn btn-primary" href="#" target="_blank" rel="noreferrer noopener">Live Demo</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      
+      <!-- New Experience Section -->
+<section id="experience" class="section experience" aria-label="Experience">
+  <div class="container">
+    <header class="section-header">
+      <h2>Experience</h2>
+      <p class="section-subtitle">Roles and responsibilities I’ve held</p>
+    </header>
+
+    <div class="timeline">
+      <!-- Timeline Item -->
+      <article class="timeline-item">
+        <div class="timeline-meta">
+          <h3 class="timeline-role">Your Role Title</h3>
+          <p class="timeline-org">Organization / Company</p>
+          <p class="timeline-date">Start — End</p>
+        </div>
+        <ul class="timeline-points">
+          <li>Key contribution or responsibility you handled.</li>
+          <li>Impact or achievement with a measurable outcome.</li>
+          <li>Tools/tech used (e.g., Python, ML, JS).</li>
+        </ul>
+      </article>
+
+      <!-- Duplicate the block above for more roles, keeping your info unchanged elsewhere -->
+      <!--
+      <article class="timeline-item">
+        <div class="timeline-meta">
+          <h3 class="timeline-role">Another Role</h3>
+          <p class="timeline-org">Another Organization</p>
+          <p class="timeline-date">Start — End</p>
+        </div>
+        <ul class="timeline-points">
+          <li>Bullet describing your responsibility or impact.</li>
+        </ul>
+      </article>
+      -->
+    </div>
+  </div>
+</section>
 
       <!-- Skills -->
       <section id="skills" class="section skills reveal" aria-label="Skills">
@@ -215,84 +337,7 @@
         </div>
       </section>
 
-      <!-- Projects -->
-      <section id="projects" class="section projects reveal" aria-label="Projects">
-        <div class="container">
-          <header class="section-header">
-            <h2>Projects</h2>
-            <p class="section-subtitle">A selection of work showcasing my skills</p>
-          </header>
-
-          <div class="card-grid">
-            <!-- Project Card -->
-            <article class="project-card">
-              <div class="project-media">
-                <img src="assets/images/project-real-estate.jpg" alt="Screenshot of Real Estate project" loading="lazy" />
-              </div>
-              <div class="project-content">
-                <h3>Real Estate</h3>
-                <p>
-                  End‑to‑end data project exploring real estate trends and price patterns, featuring EDA,
-                  visualizations, and predictive modeling.
-                </p>
-                <div class="project-links">
-                  <a class="btn btn-ghost" href="https://github.com/isamadafridi/real_estate" target="_blank" rel="noreferrer noopener">GitHub</a>
-                  <a class="btn btn-primary" href="#" target="_blank" rel="noreferrer noopener">Live Demo</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <div class="project-media">
-                <img src="assets/images/project-car-price.png" alt="Screenshot of Car Price Prediction project" loading="lazy" />
-              </div>
-              <div class="project-content">
-                <h3>Car Price Prediction</h3>
-                <p>
-                  Machine learning model predicting car prices from features with data cleaning, feature engineering,
-                  and model evaluation workflows.
-                </p>
-                <div class="project-links">
-                  <a class="btn btn-ghost" href="https://github.com/isamadafridi/car_price_predection" target="_blank" rel="noreferrer noopener">GitHub</a>
-                  <a class="btn btn-primary" href="#" target="_blank" rel="noreferrer noopener">Live Demo</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <div class="project-media">
-                <img src="assets/images/project-netflix.png" alt="Screenshot of Netflix EDA project" loading="lazy" />
-              </div>
-              <div class="project-content">
-                <h3>Netflix Data EDA</h3>
-                <p>
-                  Exploratory data analysis on Netflix titles to uncover content trends, genres, and release patterns.
-                </p>
-                <div class="project-links">
-                  <a class="btn btn-ghost" href="https://github.com/isamadafridi/NetflixDataEDA" target="_blank" rel="noreferrer noopener">GitHub</a>
-                  <a class="btn btn-primary" href="#" target="_blank" rel="noreferrer noopener">Live Demo</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <div class="project-media">
-                <img src="assets/images/project-eda.jpg" alt="Screenshot of General EDA project" loading="lazy" />
-              </div>
-              <div class="project-content">
-                <h3>General EDA</h3>
-                <p>
-                  A collection of exploratory analyses across datasets, highlighting workflows and visualization skills.
-                </p>
-                <div class="project-links">
-                  <a class="btn btn-ghost" href="https://github.com/isamadafridi/EDA" target="_blank" rel="noreferrer noopener">GitHub</a>
-                  <a class="btn btn-primary" href="#" target="_blank" rel="noreferrer noopener">Live Demo</a>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
+      
 
       <!-- Certifications -->
       <section id="certifications" class="section certifications reveal" aria-label="Certifications">
@@ -339,7 +384,7 @@
           <div class="contact-grid">
             <form
               class="contact-form"
-              action="mailto:isamadafridi.com"
+              action="mailto:isamadafridi@gmail.com"
               method="POST"
               enctype="text/plain"
             >
@@ -364,10 +409,10 @@
             </form>
 
             <aside class="contact-aside">
-              <h3>Elsewhere</h3>
+              <h3>Reachout</h3>
               <ul class="social-list" role="list">
                 <li>
-                  <a href="mailto:isamadafridi@gmail.com" aria-label="Gmail">
+                  <a href="mailto: isamadafridi@gmail.com " aria-label="Gmail">
                     <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
                       <path d="M2 4.75A2.75 2.75 0 014.75 2h14.5A2.75 2.75 0 0122 4.75v14.5A2.75 2.75 0 0119.25 22H4.75A2.75 2.75 0 012 19.25V4.75zm2.1.75l7.9 6 7.9-6H4.1zM20 6.9l-8 6.1-8-6.1v12.35c0 .41.34.75.75.75h14.5c.41 0 .75-.34.75-.75V6.9z"/>
                     </svg>
@@ -382,13 +427,13 @@
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn">
+                  <a href="https://www.linkedin.com/in/isamadafridi" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn">
                     <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V23h-4V8.5zm7 0h3.83v1.98h.05c.53-1 1.83-2.05 3.77-2.05C19.95 8.43 22 10.34 22 14.03V23h-4v-7.77c0-1.85-.03-4.22-2.57-4.22-2.57 0-2.97 2.01-2.97 4.09V23h-4V8.5z"/></svg>
                     <span class="sr-only">LinkedIn</span>
                   </a>
                 </li>
                 <li>
-                  <a href="https://x.com/your-handle" target="_blank" rel="noreferrer noopener" aria-label="X (formerly Twitter)">
+                  <a href="https://x.com/isamadafridi" target="_blank" rel="noreferrer noopener" aria-label="X (formerly Twitter)">
                     <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M18.244 2H21.5l-7.62 8.713L22 22h-6.385l-4.986-6.408L5.09 22H1.833l8.04-9.19L2 2h6.503l4.404 5.79L18.244 2z"/>
                     </svg>

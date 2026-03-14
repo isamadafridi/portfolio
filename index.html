@@ -24,6 +24,11 @@
 
     <!-- Defer main script -->
     <script defer src="assets/js/script.js"></script>
+    <!-- Include the default n8n chat styles first -->
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+
+    
+</head>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -341,6 +346,7 @@
               <p class="level">Biginner</p>
             </article>
 
+
             <article class="skill-card">
               <h3>AI Agents</h3>
               <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60">
@@ -385,6 +391,14 @@
             <article class="skill-card">
               <h3>TensorFlow</h3>
               <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85">
+                <span class="progress-bar" style="width: 45%"></span>
+              </div>
+              <p class="level">Biginner</p>
+            </article>
+
+            <article class="skill-card">
+              <h3>Scikit Learn</h3>
+              <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75">
                 <span class="progress-bar" style="width: 45%"></span>
               </div>
               <p class="level">Biginner</p>
@@ -439,7 +453,7 @@
       <section id="contact" class="section contact reveal" aria-label="Contact">
         <div class="container">
           <header class="section-header">
-            <h2>Contact</h2>
+            <h2>Get In Touch</h2>
             <p class="section-subtitle">Have a question or want to work together?</p>
           </header>
 
@@ -525,5 +539,15 @@
         JavaScript is disabled. The site works, but interactive features (theme toggle, active nav, animations) are limited.
       </div>
     </noscript>
+    
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+<script type="module">
+	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+	createChat({
+		webhookUrl: 'http://localhost:5678/webhook/605429d5-4c74-4741-932d-5d93f8185dfe/chat'
+	});
+</script>
+
   </body>
 </html>

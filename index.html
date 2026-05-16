@@ -4,31 +4,23 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title> Abdul Samad Afridi Portfolio</title>
-    <meta name="description" content="Personal portfolio of [Your Name], an Aspiring AI Engineer. Explore skills, projects, certifications, and ways to get in touch." />
+    <meta name="description" content="Personal portfolio of Abdul Samad Afridi, an Aspiring AI Engineer. Explore skills, projects, certifications, and ways to get in touch." />
     <meta name="color-scheme" content="light dark" />
     <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)">
     <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 
-    <!-- Preconnect for Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-    <!-- Google Fonts: Inter + JetBrains Mono -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css" />
 
-    <!-- Defer main script -->
     <script defer src="assets/js/script.js"></script>
-    <!-- Include the default n8n chat styles first -->
     <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
-
-    
-</head>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -64,14 +56,12 @@
             <svg class="icon moon" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M21 12.79A9 9 0 0112.21 3c-.51 0-.71.66-.29.96A7 7 0 0017 19a7.02 7.02 0 004.04-6.19c.04-.34-.31-.59-.58-.02z"/>
             </svg>
-            
           </button>
         </nav>
       </div>
     </header>
 
     <main id="main" tabindex="-1">
-      <!-- Hero -->
       <section id="home" class="section hero reveal" aria-label="Home">
         <div class="container hero-inner">
           <div class="hero-copy">
@@ -82,11 +72,8 @@
               I’m Software Engineer And an AI Engineer skilled in Python, machine learning.
               My focus is on deep learning,computer vision, and AI Automation.
             <div class="hero-actions">
-              <!-- <a class="btn btn-primary" href="#projects">View Projects</a> -->
               <a class="btn btn-ghost" href="#contact">Contact Me</a>
               <a class="btn btn-ghost" href="assets/cv/Abdul Samad Afridi CV.pdf" download>Export CV</a>
-              <!-- Alternative: print-based export (opens browser print dialog) -->
-              <!-- <button class="btn btn-ghost" type="button" onclick="window.print()">Export CV</button> -->
             </div>
           </div>
 
@@ -94,7 +81,7 @@
             <div class="avatar-wrap">
               <img
                 src="assets/images/profile.jpg"
-                alt="Portrait of [Your Name]"
+                alt="Portrait of Abdul Samad Afridi"
                 class="avatar"
                 loading="lazy"
               />
@@ -104,7 +91,6 @@
         <div class="scroll-indicator" aria-hidden="true">🔻Scroll📜 </div>
       </section>
 
-      <!-- About -->
       <section id="about" class="section about reveal" aria-label="About">
         <div class="container">
           <header class="section-header">
@@ -116,7 +102,7 @@
             <div class="about-media">
               <img
                 src="assets/images/profile.jpg"
-                alt="Profile photo of [Your Name]"
+                alt="Profile photo of Abdul Samad Afridi"
                 class="about-photo"
                 loading="lazy"
               />
@@ -126,7 +112,6 @@
                 I’m a dedicated Software and Machine Learning Engineer passionate about leveraging technology to drive innovation and
                 solve real-world problems. My focus lies in exploring the capabilities of Artificial Intelligence,
                 Machine Learning, Computer Vision and Workflow Automation to create intelligent, efficient, and scalable solutions.
-
               </p>
               <p>
                 I continuously seek to expand my expertise through hands-on projects and practical experience, 
@@ -137,14 +122,6 @@
                 I’m eager to collaborate with professionals and organizations pushing the boundaries of technology,
                 share insights, and contribute to forward-thinking AI initiatives.
               </p>
-              <!-- <ul class="about-highlights">
-                <li>Strong foundation in Python with a focus on solving real-world problems</li>
-                <li>Hands-on experience in Machine Learning and Deep Learning, including building CNN-based Computer Vision solutions</li>
-                <li>Skilled in data analysis and EDA using Pandas to extract meaningful insights</li>
-                <li>Experience developing AI-driven automation workflows and Android applications</li>
-                <li>Proficient in Git and GitHub, with experience in collaborative and version-controlled development</li>
-              </ul> -->
-
               <div class="about-actions">
                 <a class="btn btn-primary" href="#contact">Let's work together</a>
               </div>
@@ -152,20 +129,20 @@
           </article>
         </div>
       </section>
-      <!-- Projects -->
+
       <section id="projects" class="section projects reveal" aria-label="Projects">
         <div class="container">
           <header class="section-header">
             <h2>Projects</h2>
             <p class="section-subtitle">A showcase of practical projects demonstrating my programming expertise and problem-solving ability</p>
+            <p id="project-counter" class="project-counter"></p>
           </header>
 
-          
-
-          <div class="card-grid">
-            <!-- Project Card -->
-             
-              <!-- Project Card -->
+          <div class="projects-slider-wrapper">
+            <button id="slide-left" class="slider-btn" aria-label="Scroll left">❮</button>
+            
+            <div id="projects-slider" class="card-grid slider-container">
+              
               <article class="project-card">
                 <div class="project-media">
                   <img src="assets/images/obstacle_detection.png" alt="Screenshot of Road Obstacle Detection project" loading="lazy" />
@@ -184,10 +161,9 @@
                 </div>
               </article>
 
-              <!-- Project Card -->
             <article class="project-card">
               <div class="project-media">
-                <img src="assets/images/bmi_app.png" alt="Screenshot of Car Price Prediction project" loading="lazy" />
+                <img src="assets/images/bmi_app.png" alt="Screenshot of BMI Calculator project" loading="lazy" />
               </div>
               <div class="project-content">
                 <h3>BMI Calculator</h3>
@@ -202,7 +178,6 @@
               </div>
             </article>
     
-            
               <article class="project-card">
                 <div class="project-media">
                   <img src="assets/images/AI-powered pneumonia detection from X-rays.png" alt="Thumbnail of AI-powered pneumonia detection from X-rays" loading="lazy" />
@@ -211,11 +186,9 @@
                   <h3>Pneumonia Detection using Chest X-Ray Images</h3>
                   <p>
                     An AI-powered deep learning project that classifies chest X-ray images to detect Pneumonia (Positive/Negative) using the Pneumonia-MNIST dataset.
-
                   </p>
                   <div class="project-links">
                     <a class="btn btn-ghost" href="https://github.com/isamadafridi/Pneumonia-Detection-using-Chest-X-Ray" target="_blank" rel="noreferrer noopener">GitHub</a>
-                    <!-- <a class="btn btn-primary" href="#" target="_blank" rel="noreferrer noopener">Live Demo</a> -->
                   </div>
                 </div>
               </article>
@@ -232,7 +205,6 @@
                   </p>
                   <div class="project-links">
                     <a class="btn btn-ghost" href="https://github.com/isamadafridi/car_price_predection" target="_blank" rel="noreferrer noopener">GitHub</a>
-                    <!-- <a class="btn btn-primary" href="#" target="_blank" rel="noreferrer noopener">Live Demo</a> -->
                   </div>
                 </div>
               </article>
@@ -248,60 +220,41 @@
                   </p>
                   <div class="project-links">
                     <a class="btn btn-ghost" href="https://github.com/isamadafridi/NetflixDataEDA" target="_blank" rel="noreferrer noopener">GitHub</a>
-                    <!-- <a class="btn btn-primary" href="#" target="_blank" rel="noreferrer noopener">Live Demo</a> -->
                   </div>
                 </div>
               </article>
 
-              
+            </div>
             
+            <button id="slide-right" class="slider-btn" aria-label="Scroll right">❯</button>
           </div>
         </div>
       </section>
 
-      
-      <!--Experience Section -->
-<section id="experience" class="section experience" aria-label="Experience">
-  <div class="container">
-    <header class="section-header">
-      <h2>Experience</h2>
-      <p class="section-subtitle">Roles and responsibilities I’ve held</p>
-    </header>
+      <section id="experience" class="section experience" aria-label="Experience">
+        <div class="container">
+          <header class="section-header">
+            <h2>Experience</h2>
+            <p class="section-subtitle">Roles and responsibilities I’ve held</p>
+          </header>
 
-    <div class="timeline">
-      <!-- Timeline Item -->
-      <article class="timeline-item">
-        <div class="timeline-meta">
-          <h3 class="timeline-role">Technical Team Member</h3>
-          <p class="timeline-org">AKTI IMScineces</p>
-          <p class="timeline-date">Jun 2025 — Present</p>
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="timeline-meta">
+                <h3 class="timeline-role">Technical Team Member</h3>
+                <p class="timeline-org">AKTI IMScineces</p>
+                <p class="timeline-date">Jun 2025 — Present</p>
+              </div>
+              <ul class="experience-details">
+                <li>Collaborated with team members to organize and deliver a hands-on GitHub workshop.</li>
+                <li>Guided attendees on version control fundamentals and collaborative coding practices.</li>
+                <li>Tools: Git, GitHub, VS Code, CLI.</li>
+              </ul>
+            </article>
+          </div>
         </div>
-        <ul class="experience-details">
-          <li>Collaborated with team members to organize and deliver a hands-on GitHub workshop.</li>
-          <li>Guided attendees on version control fundamentals and collaborative coding practices.</li>
-          <li>Tools: Git, GitHub, VS Code, CLI.</li>
-        </ul>
-      </article>
+      </section>
 
-      <!-- Duplicate the block above for more roles, keeping your info unchanged elsewhere -->
-      <!-- <article class="timeline-item">
-        <div class="timeline-meta">
-          <h3 class="timeline-role">Your Role Title</h3>
-          <p class="timeline-org">Organization / Company</p>
-          <p class="timeline-date">Start — End</p>
-        </div>
-        <ul class="timeline-points">
-          <li>Key contribution or responsibility you handled.</li>
-          <li>Impact or achievement with a measurable outcome.</li>
-          <li>Tools/tech used (e.g., Python, ML, JS).</li>
-        </ul>
-      </article> -->
-
-    </div>
-  </div>
-</section>
-
-      <!-- Skills -->
       <section id="skills" class="section skills reveal" aria-label="Skills">
         <div class="container">
           <header class="section-header">
@@ -310,7 +263,6 @@
           </header>
 
           <div class="skills-grid">
-            <!-- Skill Card -->
              <article class="skill-card">
               <h3>Python</h3>
               <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80">
@@ -332,7 +284,7 @@
               <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75">
                 <span class="progress-bar" style="width: 45%"></span>
               </div>
-              <p class="level">Biginner</p>
+              <p class="level">Beginner</p>
             </article>
 
             <article class="skill-card">
@@ -340,16 +292,15 @@
               <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75">
                 <span class="progress-bar" style="width: 45%"></span>
               </div>
-              <p class="level">Biginner</p>
+              <p class="level">Beginner</p>
             </article>
-
 
             <article class="skill-card">
               <h3>AI Agents</h3>
               <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60">
                 <span class="progress-bar" style="width: 30%"></span>
               </div>
-              <p class="level">Biginner</p>
+              <p class="level">Beginner</p>
             </article>
 
             <article class="skill-card">
@@ -359,7 +310,6 @@
               </div>
               <p class="level">Intermediate</p>
             </article>
-
 
             <article class="skill-card">
               <h3>Git & GitHub</h3>
@@ -374,7 +324,7 @@
               <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="65">
                 <span class="progress-bar" style="width: 35%"></span>
               </div>
-              <p class="level">Biginner</p>
+              <p class="level">Beginner</p>
             </article>
 
             <article class="skill-card">
@@ -390,7 +340,7 @@
               <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85">
                 <span class="progress-bar" style="width: 45%"></span>
               </div>
-              <p class="level">Biginner</p>
+              <p class="level">Beginner</p>
             </article>
 
             <article class="skill-card">
@@ -398,7 +348,7 @@
               <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75">
                 <span class="progress-bar" style="width: 45%"></span>
               </div>
-              <p class="level">Biginner</p>
+              <p class="level">Beginner</p>
             </article>
 
             <article class="skill-card">
@@ -406,20 +356,13 @@
               <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75">
                 <span class="progress-bar" style="width: 45%"></span>
               </div>
-              <p class="level">Biginner</p>
+              <p class="level">Beginner</p>
             </article>
-
-
-            
-            
 
           </div>
         </div>
       </section>
 
-      
-
-      <!-- Certifications -->
       <section id="certifications" class="section certifications reveal" aria-label="Certifications">
         <div class="container">
           <header class="section-header">
@@ -432,16 +375,13 @@
               <div class="cert-content">
                 <h3>Computer Vision</h3>
                 <p class="issuer">FreeCodeCamp & CampusX(Youtube)</p>
-                <!-- <p class="date">March 2026 - July 2026</p> -->
               </div>
             </li>
-
             
             <li class="cert-item">
               <div class="cert-content">
                 <h3>AI Automation using n8n</h3>
                 <p class="issuer">Dr.Zafar Iqbal (Youtube)</p>
-                <!-- <p class="date">Oct 2025 - Dec 2025</p> -->
               </div>
             </li>
 
@@ -449,14 +389,12 @@
               <div class="cert-content">
                 <h3>Artificial Intelligence (Python,ML,DL)</h3>
                 <p class="issuer">NAVTTIC x Strings Technologies</p>
-                <!-- <p class="date">March 2025 - July 2025</p> -->
               </div>
             </li>
             <li class="cert-item">
               <div class="cert-content">
                 <h3>Machine Learning Specialization</h3>
                 <p class="issuer">Coursera — DeepLearning.AI</p>
-                <!-- <p class="date">2026</p> -->
               </div>
             </li>
             
@@ -464,14 +402,12 @@
               <div class="cert-content">
                 <h3>Git & Github workshop</h3>
                 <p class="issuer">Arfa Karim Technology Incubator(ImSciences)</p>
-                <!-- <p class="date">2024</p> -->
               </div>
             </li>
           </ul>
         </div>
       </section>
 
-      <!-- Contact -->
       <section id="contact" class="section contact reveal" aria-label="Contact">
         <div class="container">
           <header class="section-header">
@@ -563,13 +499,12 @@
     </noscript>
     
     <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
-<script type="module">
-	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+    <script type="module">
+      import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
 
-	createChat({
-		webhookUrl: 'http://localhost:5678/webhook/605429d5-4c74-4741-932d-5d93f8185dfe/chat'
-	});
-</script>
-
+      createChat({
+        webhookUrl: 'http://localhost:5678/webhook/605429d5-4c74-4741-932d-5d93f8185dfe/chat'
+      });
+    </script>
   </body>
 </html>

@@ -1,5 +1,4 @@
-/* 
-  Portfolio Styles
+/* Portfolio Styles
   - Mobile-first, responsive design using Flexbox/Grid
   - Light/Dark theme with CSS variables
   - Smooth scrolling, subtle transitions, and accessible focus states
@@ -397,7 +396,7 @@ html[data-theme="dark"] .icon.moon { display: block; }
 .level { color: var(--muted); font-size: .9rem; margin: 0; }
 
 /* ------------------------------
-   Projects
+   Projects (Original Grid Style - Kept for reference, overridden below)
 ------------------------------ */
 .card-grid {
   display: grid;
@@ -567,12 +566,73 @@ input:focus, textarea:focus {
 .hidden { display: none !important; }
 
 @media print {
-  /* Hide nav, footer, and action-only elements in print */
   header, nav, .site-header, .site-footer, .hero-actions, .contact-form .form-actions, .social-list {
     display: none !important;
   }
-  /* Expand content width for print if you use a container max-width */
   .container { max-width: none !important; }
-  /* Optional: reduce background/gradient usage for cleaner prints */
   body { background: #ffffff !important; }
+}
+
+/* ------------------------------
+   Projects Slider Updates
+------------------------------ */
+.project-counter {
+  margin-top: var(--space-4);
+  font-family: var(--font-mono);
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+}
+
+.projects-slider-wrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  position: relative;
+}
+
+.slider-btn {
+  background: var(--card);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 1.2rem;
+  min-width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow);
+  z-index: 2;
+  transition: background-color 0.2s, transform 0.2s;
+  flex-shrink: 0;
+}
+
+.slider-btn:hover {
+  background: var(--bg-elev);
+  transform: scale(1.05);
+}
+
+/* Override the standard grid specifically for the slider */
+.card-grid.slider-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Hides scrollbar in Firefox */
+  -ms-overflow-style: none; /* Hides scrollbar in IE/Edge */
+  padding-bottom: var(--space-4); /* Room for shadow */
+  padding-top: var(--space-2);
+}
+
+.card-grid.slider-container::-webkit-scrollbar {
+  display: none; /* Hides scrollbar in Chrome/Safari/Edge */
+}
+
+.card-grid.slider-container .project-card {
+  flex: 0 0 calc(100% - var(--space-4)); /* 1 card on mobile */
+  max-width: 320px; /* Fixed width on desktop */
+  scroll-snap-align: start;
 }

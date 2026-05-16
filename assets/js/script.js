@@ -1,5 +1,4 @@
-/* 
-  Portfolio Interactions
+/* Portfolio Interactions
   - Smooth anchor scrolling (enhanced behavior + mobile menu close)
   - Active nav link highlight on section intersection
   - Mobile hamburger toggle with ARIA state
@@ -161,4 +160,37 @@
     // If user prefers reduced motion, disable smooth scroll JS (CSS already handled)
     document.documentElement.style.scrollBehavior = 'auto';
   }
+
+  // ------------------------------
+  // Projects Slider & Auto-Counter
+  // ------------------------------
+  const projectsSlider = document.getElementById('projects-slider');
+  const slideLeftBtn = document.getElementById('slide-left');
+  const slideRightBtn = document.getElementById('slide-right');
+  const projectCounter = document.getElementById('project-counter');
+
+  if (projectsSlider) {
+    // 1. Auto-increment Counter
+    const projectCards = projectsSlider.querySelectorAll('.project-card');
+    const totalProjects = projectCards.length;
+    
+    if (projectCounter) {
+      projectCounter.textContent = `Total Projects: ${totalProjects}`;
+    }
+
+    // 2. Left / Right Scroll Logic
+    if (slideLeftBtn && slideRightBtn) {
+      // Amount to scroll (roughly the width of one card + gap)
+      const scrollAmount = 340; 
+
+      slideLeftBtn.addEventListener('click', () => {
+        projectsSlider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+      });
+
+      slideRightBtn.addEventListener('click', () => {
+        projectsSlider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+      });
+    }
+  }
+
 })();

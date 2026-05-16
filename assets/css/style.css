@@ -396,7 +396,7 @@ html[data-theme="dark"] .icon.moon { display: block; }
 .level { color: var(--muted); font-size: .9rem; margin: 0; }
 
 /* ------------------------------
-   Projects (Original Grid Style - Kept for reference, overridden below)
+   Projects
 ------------------------------ */
 .card-grid {
   display: grid;
@@ -635,4 +635,36 @@ input:focus, textarea:focus {
   flex: 0 0 calc(100% - var(--space-4)); /* 1 card on mobile */
   max-width: 320px; /* Fixed width on desktop */
   scroll-snap-align: start;
+}
+
+/* ------------------------------
+   Read More / Show Less Toggle
+------------------------------ */
+.project-desc {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Truncates the text to ~2 lines (about 30%) */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: var(--space-4);
+}
+
+.project-desc.expanded {
+  -webkit-line-clamp: unset; /* Shows all text when expanded */
+}
+
+.read-more-btn {
+  background: none;
+  border: none;
+  color: var(--accent);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0;
+  margin-bottom: var(--space-4);
+  display: inline-block;
+  font-family: inherit;
+}
+
+.read-more-btn:hover {
+  text-decoration: underline;
 }

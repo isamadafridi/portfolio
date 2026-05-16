@@ -180,7 +180,6 @@
 
     // 2. Left / Right Scroll Logic
     if (slideLeftBtn && slideRightBtn) {
-      // Amount to scroll (roughly the width of one card + gap)
       const scrollAmount = 340; 
 
       slideLeftBtn.addEventListener('click', () => {
@@ -192,5 +191,36 @@
       });
     }
   }
+
+  // ------------------------------
+  // Read More / Show Less Logic
+  // ------------------------------
+  setTimeout(() => {
+    // We delay this just slightly (100ms) to ensure CSS fonts and layouts have loaded
+    const projectDescriptions = document.querySelectorAll('.project-desc');
+    
+    projectDescriptions.forEach(desc => {
+      // Check if the text is longer than the 2 visible lines
+      if (desc.scrollHeight > desc.clientHeight) {
+        
+        // Pull the text up slightly closer to the button
+        desc.style.marginBottom = '0.5rem'; 
+
+        // Create the button
+        const btn = document.createElement('button');
+        btn.className = 'read-more-btn';
+        btn.textContent = 'Read More';
+        
+        // Put the button right after the paragraph
+        desc.parentNode.insertBefore(btn, desc.nextSibling);
+        
+        // Add toggle functionality
+        btn.addEventListener('click', () => {
+          desc.classList.toggle('expanded');
+          btn.textContent = desc.classList.contains('expanded') ? 'Show Less' : 'Read More';
+        });
+      }
+    });
+  }, 100);
 
 })();
